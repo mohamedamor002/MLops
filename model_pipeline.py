@@ -9,8 +9,9 @@ import mlflow
 import mlflow.sklearn
 from mlflow.models.signature import infer_signature
 
-# Set MLflow tracking URI to match your MLflow UI setup
-mlflow.set_tracking_uri("http://localhost:5000")
+# Set MLflow tracking URI to use MySQL as backend store
+mlflow.set_tracking_uri("mysql+pymysql://root:Mm23217615*@localhost/mlflow_db")
+mlflow.set_experiment("Churn_Prediction")
 
 def load_data(file_path):
     df = pd.read_csv(file_path)
@@ -97,3 +98,7 @@ if __name__ == "__main__":
     parser.add_argument('task', choices=['preprocess', 'train', 'all'], help="Specify the task: 'preprocess', 'train', or 'all'")
     args = parser.parse_args()
     main(args)
+
+# Docker integration and cloud storage setup to be added in the next session
+# Future integration with S3/Azure Blob Storage for model versioning
+# MLflow Tracking Server will be used for team collaboration
