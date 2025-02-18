@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/143d39435e52496d8d11aab5cab04a7c/artifacts
+end_time: 1739881210664
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 143d39435e52496d8d11aab5cab04a7c
+run_name: ambitious-crane-146
+run_uuid: 143d39435e52496d8d11aab5cab04a7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739881200923
+status: 3
+tags: []
+user_id: amor
